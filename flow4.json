@@ -108,6 +108,53 @@
         ]
     },
     {
+        "id": "010a4c41df70e716",
+        "type": "inject",
+        "z": "539d2573fd1e4a58",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":\"Lalo\",\"temp\":22}",
+        "payloadType": "str",
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "1074e5014d98b581"
+            ]
+        ]
+    },
+    {
+        "id": "1074e5014d98b581",
+        "type": "mqtt out",
+        "z": "539d2573fd1e4a58",
+        "name": "",
+        "topic": "codigoIoT/g7/mosquitto/msg",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7067f09cda152ac5",
+        "x": 460,
+        "y": 320,
+        "wires": []
+    },
+    {
         "id": "7067f09cda152ac5",
         "type": "mqtt-broker",
         "name": "",
